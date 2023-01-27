@@ -16,7 +16,7 @@ prompt()
 "Пароль введен неправильно".
 */
 // let password = "рыба-меч";
-// let checkPassword = String(prompt("Введите пароль"));
+// let checkPassword = prompt("Введите пароль");
 
 // if (password === checkPassword) {
 //   console.log("Пароль введен верно");
@@ -90,37 +90,25 @@ let monthNumber = Number(prompt("Введите номер месяца"));
 
 switch (monthNumber) {
   case 1:
-    console.log("Январь, первый месяц года, принадлежит к сезону зима");
-    break;
   case 2:
-    console.log("Февраль, первый месяц года, принадлежит к сезону зима");
+  case 12:
+    console.log("Зима");
+    break;
   case 3:
-    console.log("Март, первый месяц года, принадлежит к сезону весна");
-    break;
   case 4:
-    console.log("Апрель, первый месяц года, принадлежит к сезону весна");
-    break;
   case 5:
-    console.log("Май, первый месяц года, принадлежит к сезону весна");
+    console.log("Весна");
     break;
   case 6:
-    console.log("Июнь, первый месяц года, принадлежит к сезону лето");
   case 7:
-    console.log("Июль, первый месяц года, принадлежит к сезону лето");
-    break;
   case 8:
-    console.log("Август, первый месяц года, принадлежит к сезону лето");
-  case 9:
-    console.log("Сентябрь, первый месяц года, принадлежит к сезону осень");
+    console.log("лето");
     break;
+  case 9:
   case 10:
-    console.log("Октябрь, первый месяц года, принадлежит к сезону осень");
   case 11:
-    console.log("Ноябрь, первый месяц года, принадлежит к сезону осень");
-  case 12:
-    console.log("Декабрь, первый месяц года, принадлежит к сезону зима");
+    console.log("зима");
     break;
   default:
-    console.log("Такого месяца нет");
-    break;
+    console.log("такого нет месяца");
 }
